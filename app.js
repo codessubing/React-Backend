@@ -1,8 +1,11 @@
 require('dotenv').config()
 const express = require('express')
 const connectToDatabase = require('./database')
+const Blog = require('./model/blogModel')
 const app = express()
 connectToDatabase()
+Blog()
+
 
 app.get("/",(req,res) => {
     res.json({
