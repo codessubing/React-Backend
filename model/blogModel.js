@@ -10,7 +10,7 @@ const mongoose = require('mongoose')
             type: String
         },
         description:{
-            type: Text
+            type: String
         },
         image : {
             type: String
