@@ -7,7 +7,14 @@ const { storage } = require('./middleware/multer')
 const app = express()
 const upload = multer({storage : storage})
 const fs = require('fs')
+const cors  = require('cors')
 
+
+app.use(cors(
+    {
+        origin : ['http://localhost:5173','https://react-backend-bstb.onrender.com/'] 
+    }
+))
 
 
 connectToDatabase()
