@@ -12,7 +12,7 @@ const cors  = require('cors')
 
 app.use(cors(
     {
-        origin : ['http://localhost:5173','https://react-backend-bstb.onrender.com/'] 
+        origin : ['http://localhost:5173','https://cardde-v.vercel.app/'] 
     }
 ))
 
